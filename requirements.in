@@ -1,0 +1,7 @@
+
+datamodel-code-generator==0.25.2
+pycountry==23.12.11
+pydantic==2.5.3
+pydantic-extra-types==2.4.1
+requests==2.31.0
+tomli==2.0.1
