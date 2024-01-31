@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from collections.abc import Sequence
+from typing import Sequence
 from enum import Enum
 from typing import Optional, Union, Mapping, Any
 from uuid import UUID
@@ -8,7 +8,7 @@ from uuid import UUID
 from pydantic import BaseModel, Field
 from typing_extensions import Annotated
 
-from common import (
+from models.common import (
     MispID,
     AttributeType,
 )

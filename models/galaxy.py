@@ -1,14 +1,14 @@
 from __future__ import annotations
 
-from collections.abc import Mapping, Sequence
+from typing import Mapping, Sequence
 from typing import Any, Optional, Union
 from uuid import UUID
 
 from pydantic import BaseModel, Field, RootModel
 from typing_extensions import Annotated
 
-from common import MispID, DistributionLevelId
-from organisation import Organisation
+from models.common import MispID, DistributionLevelId
+from models.organisation import Organisation
 
 
 class GalaxyClusterVersion(RootModel[Optional[str]]):

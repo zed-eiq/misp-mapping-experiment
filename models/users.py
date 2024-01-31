@@ -1,15 +1,15 @@
 from __future__ import annotations
 
-from collections.abc import Sequence
+from typing import Sequence
 from typing import Optional
 
 from pydantic import AwareDatetime, BaseModel, EmailStr, Field, RootModel
 from typing_extensions import Annotated
 
-from common import (
+from models.common import (
     MispID,
 )
-from server import ChangePw, ViewUserSettings
+from models.server import ChangePw, ViewUserSettings
 
 
 class UserNoId(BaseModel):

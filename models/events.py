@@ -1,19 +1,19 @@
 from __future__ import annotations
 
-from collections.abc import Sequence
+from typing import Sequence
 from typing import Optional
 from uuid import UUID
 
 from pydantic import BaseModel, EmailStr, Field, RootModel
 from typing_extensions import Annotated
 
-from common import (
+from models.common import (
     MispID,
     AnalysisLevelId,
     DistributionLevelId,
     ThreatLevelId,
 )
-from users import UserNoId
+from models.users import UserNoId
 
 
 class EventReport(BaseModel):

@@ -11,10 +11,10 @@ from uuid import UUID
 from pydantic import BaseModel, Field
 from typing_extensions import Annotated
 
-from common import (
+from models.common import (
     MispID,
 )
-from organisation import OrganisationModel
+from models.organisation import OrganisationModel
 
 
 class Sighting(BaseModel):

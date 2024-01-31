@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from collections.abc import Mapping, Sequence
+from typing import Mapping, Sequence
 from enum import Enum
 from typing import Any, Optional, Union
 from uuid import UUID
@@ -8,7 +8,7 @@ from uuid import UUID
 from pydantic import BaseModel, Field, RootModel
 from typing_extensions import Annotated
 
-from common import MispID
+from models.common import MispID
 
 
 class Position(BaseModel):
@@ -107,7 +107,10 @@ class MispSetting(BaseModel):
         Field(
             None,
             examples=[
-                "The currently set baseurl does not match the URL through which you have accessed the page. Disregard this if you are accessing the page via an alternate URL (for example via IP address)."
+                "The currently set baseurl does not match the URL"
+                " through which you have accessed the page. "
+                " Disregard this if you are accessing the page"
+                " via an alternate URL (for example via IP address)."
             ],
         ),
     ]

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from collections.abc import Sequence
+from typing import Sequence
 from enum import Enum
 from typing import Optional, Union
 from uuid import UUID
@@ -8,15 +8,15 @@ from uuid import UUID
 from pydantic import BaseModel, Field, RootModel
 from typing_extensions import Annotated
 
-from attributes import ExtendedAttribute
-from common import (
+from models.attributes import ExtendedAttribute
+from models.common import (
     MispID,
     AttributeType,
     AttributeCategory,
     ThreatLevelId,
 )
-from decay import DecayingModelParameters
-from organisation import OrganisationId, OrganisationName
+from models.decay import DecayingModelParameters
+from models.organisation import OrganisationId, OrganisationName
 
 
 class ObjectRestSearchList(BaseModel):

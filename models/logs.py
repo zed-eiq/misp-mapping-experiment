@@ -7,7 +7,7 @@ from typing import Optional
 from pydantic import BaseModel, EmailStr, Field
 from typing_extensions import Annotated
 
-from common import (
+from models.common import (
     MispID,
     ModelName,
 )

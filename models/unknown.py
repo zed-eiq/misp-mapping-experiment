@@ -1,12 +1,12 @@
 from __future__ import annotations
 
-from collections.abc import Mapping, Sequence
+from typing import Mapping, Sequence
 from typing import Any, Optional
 
 from pydantic import BaseModel, Field, RootModel
 from typing_extensions import Annotated
 
-from common import (
+from models.common import (
     AttributeType,
     AttributeCategory,
 )

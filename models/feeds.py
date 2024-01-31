@@ -1,18 +1,18 @@
 from __future__ import annotations
 
-from collections.abc import Sequence
+from typing import Sequence
 from typing import Optional, Union
 
 from pydantic import BaseModel, Field, RootModel
 from typing_extensions import Annotated
 
-from common import (
+from models.common import (
     MispID,
     DistributionLevelId,
     Timestamp,
 )
-from organisation import Organisation
-from server import FeedInputSource, FeedSourceFormat
+from models.organisation import Organisation
+from models.server import FeedInputSource, FeedSourceFormat
 
 
 class ServerNoId(BaseModel):

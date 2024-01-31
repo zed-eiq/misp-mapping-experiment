@@ -8,7 +8,7 @@ from uuid import UUID
 from pydantic import BaseModel, Field, RootModel
 from typing_extensions import Annotated
 
-from common import (
+from models.common import (
     MispID,
 )
 

@@ -1,13 +1,13 @@
 from __future__ import annotations
 
-from collections.abc import Sequence
+from typing import Sequence
 from typing import Optional
 from uuid import UUID
 
 from pydantic import BaseModel, Field, RootModel, constr
 from typing_extensions import Annotated
 
-from common import (
+from models.common import (
     MispID,
 )
 
