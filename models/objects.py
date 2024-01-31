@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from collections.abc import Sequence
-from typing import Optional
+from typing import Optional, List
 from uuid import UUID
 
 from pydantic import BaseModel, Field
@@ -12,6 +12,15 @@ from common import (
     DistributionLevelId,
 )
 from events import Event4
+
+
+class ObjectRelationshipType(BaseModel):
+    # See object-relationship.json
+    # or https://github.com/MISP/misp-objects/blob/main/relationships/definition.json
+    name: str
+    oppposite: str  # Name of relationship in reverse direction
+    format: List[str]
+    # Omitted description -- not important for usage
 
 
 class Object(BaseModel):
