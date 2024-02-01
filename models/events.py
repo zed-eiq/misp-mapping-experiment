@@ -3,6 +3,7 @@ from __future__ import annotations
 from typing import Sequence
 from typing import Optional
 from uuid import UUID
+from datetime import datetime
 
 from pydantic import BaseModel, EmailStr, Field, RootModel
 from typing_extensions import Annotated
@@ -36,8 +37,8 @@ class Event(BaseModel):
         Optional[str], Field(None, examples=["logged source ip"], max_length=65535)
     ]
     orgc_id: MispID
-    uuid: Optional[UUID]
-    date: Annotated[Optional[str], Field(None, examples=["1991-01-15"])]
+    uuid: Optional[UUID] = None
+    date: datetime
     published: Optional[bool] = None
     analysis: Optional[AnalysisLevelId] = None
     attribute_count: Annotated[
